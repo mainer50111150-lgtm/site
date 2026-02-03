@@ -1,201 +1,59 @@
-
-```html
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crypto Iran News</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+</head>
 <style>
-body{
-  margin:0;
-  font-family:tahoma;
-  background:#0f172a;
-  color:#fff;
+.matnha{
+position: absolute;
+top: 0%;
+width: auto;
+background:linear-gradient(64deg,#00177be0,#6262ff,#0011ffe4);
+text-align: center;
+left: 0%;
+right: 0%;
+font-size: 26px;
+font-weight: bold;
+
+}
+.pangareha{
+    position: absolute;
+  top: 350px;
+  bottom: 0%;
+  right: 0%;
+  width: 90%;
+  display: flex;
+  flex-direction: column; /* به جای ردیفی، ستونی */
+  gap: 200px;
 }
 
-header{
-  background:#020617;
-  padding:20px;
-  text-align:center;
-}
-
-header h1{color:#38bdf8;}
-
-nav{
-  background:#020617;
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  padding:10px;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-}
-
-nav a:hover{color:#38bdf8;}
-
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:20px;
-}
-
-.hero{
-  background:linear-gradient(45deg,#020617,#0f172a);
-  padding:40px;
-  border-radius:15px;
-  margin-bottom:30px;
-}
-
-.hero h2{color:#38bdf8;}
-
-.news-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:#020617;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 0 10px #000;
-  transition:0.3s;
-}
-
-.card:hover{transform:scale(1.03);}
-
-.card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-
-.card .content{
-  padding:15px;
-}
-
-.card h3{color:#38bdf8;}
-
-.price-box{
-  background:#020617;
-  padding:20px;
-  border-radius:12px;
-  margin:30px 0;
-  text-align:center;
-}
-
-footer{
-  background:#020617;
-  text-align:center;
-  padding:15px;
-  margin-top:40px;
-  color:#aaa;
-}
-
-.btn{
-  background:#38bdf8;
-  color:#000;
-  border:none;
-  padding:8px 15px;
-  border-radius:5px;
-  cursor:pointer;
+button1{
+    text-shadow: 0px 0px 20px;
+    font-weight: bold;
+padding-bottom: 5%;
+padding-top: 5%;
+direction: rtl;
+  font-size: 8vw;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background:linear-gradient(500deg,#3b388be4,#000041,#250c95);
+  color: white;
+  transition: 0.5s ;
 }
 </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Crypto Iran News</h1>
-  <p>اخبار ارز دیجیتال و فناوری</p>
-</header>
-
-<nav>
-  <a href="#">خانه</a>
-  <a href="#news">اخبار</a>
-  <a href="#price">قیمت‌ها</a>
-  <a href="#about">درباره ما</a>
-</nav>
-
-<div class="container">
-
-<!-- بخش ویژه -->
-<div class="hero">
-  <h2>خبر ویژه امروز</h2>
-  <p>بیت‌کوین به رکورد جدید رسید و بازار در حال رشد است.</p>
-  <button class="btn">ادامه مطلب</button>
-</div>
-
-<!-- قیمت -->
-<div class="price-box" id="price">
-  <h2>💰 قیمت بیت کوین</h2>
-  <p id="btc">در حال دریافت...</p>
-</div>
-
-<!-- اخبار -->
-<h2 id="news">📰 آخرین اخبار</h2>
-
-<div class="news-grid">
-
-  <div class="card">
-    <img src="https://picsum.photos/400/300?1">
-    <div class="content">
-      <h3>رشد اتریوم</h3>
-      <p>اتریوم رشد ۱۲ درصدی را تجربه کرد.</p>
+<body style="background-color: rgb(9, 0, 61);">
+    <div class="matnha" id="matnha1">
+    <h1>بهترین اخبار روز📰</h1>
+    <h1>❗بهترین خبر ها</h1>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://picsum.photos/400/300?2">
-    <div class="content">
-      <h3>ورود سرمایه جدید</h3>
-      <p>سرمایه‌گذاران بزرگ وارد بازار شدند.</p>
+    <div class="pangareha">
+    <button1 onclick="window.location.href='w.html'">خبر های کریپتو🪙</button1>
+<button1 >تمام خبر های مالی🗞️</button1>
+<button1>خبر های سیاسی⚖️</button1>
     </div>
-  </div>
-
-  <div class="card">
-    <img src="https://picsum.photos/400/300?3">
-    <div class="content">
-      <h3>قوانین جدید</h3>
-      <p>قوانین جدید ارز دیجیتال اعلام شد.</p>
-    </div>
-  </div>
-
-</div>
-
-<!-- درباره ما -->
-<div id="about" style="margin-top:40px">
-  <h2>درباره ما</h2>
-  <p>ما مرجع تخصصی اخبار کریپتو در ایران هستیم.</p>
-</div>
-
-</div>
-
-<footer>
-  © 2026 Crypto Iran News | All Rights Reserved
-</footer>
-
-<script>
-async function loadBTC(){
-  try{
-    let res=await fetch("https://api.lbkex.com/v2/supplement/ticker/price.do?symbol=btc_usdt");
-    let data=await res.json();
-    document.getElementById("btc").innerText=
-      "$"+Number(data[0].price).toLocaleString();
-  }catch{
-    document.getElementById("btc").innerText="خطا در دریافت";
-  }
-}
-
-loadBTC();
-setInterval(loadBTC,60000);
-</script>
-
+    
 </body>
 </html>
-
